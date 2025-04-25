@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure URL Scanner</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    input, button { padding: 8px; }
+    pre { background: #fff; padding: 10px; border: 1px solid #ddd; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h2>🔍 Secure URL Scanner</h2>
+  <form method="POST">
+    <input type="text" name="url" placeholder="Enter URL to scan" required>
+    <button type="submit">Scan</button>
+  </form>
+
+  {% if url %}
+    <h3>Scanned URL: {{ url }}</h3>
+  {% endif %}
+
+  {% if result %}
+    <h3>Scan Results:</h3>
+    <pre>{{ result | tojson(indent=2) }}</pre>
+  {% endif %}
+</body>
+</html>
