@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-VT_API_KEY = 'YOUR_API_KEY'  # Replace with your actual key
+VT_API_KEY = '1df9a47a4a2f6919fbeb4d2895ef6985daa64d668eab83b02782fc55b60047a5'  # Replace with your actual key
 
 HTML_TEMPLATE = '''
 <!DOCTYPE html>
